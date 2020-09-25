@@ -6,7 +6,7 @@
 
   <groupId>com.americanexpress.unlocode</groupId>
   <artifactId>unlocode</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.4</version>
 
   <properties>
     <java.version>8</java.version>
@@ -43,7 +43,7 @@
     <dependency>
       <artifactId>guava</artifactId>
       <groupId>com.google.guava</groupId>
-      <version>28.1-jre</version>
+      <version>29.0-jre</version>
     </dependency>
     <dependency>
       <artifactId>lombok</artifactId>

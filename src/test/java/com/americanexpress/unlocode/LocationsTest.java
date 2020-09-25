@@ -26,7 +26,7 @@ public class LocationsTest {
   @Test
   public void getAllLocationIds() {
     Collection<LocationId> allLocationIds = Locations.getAllLocationIds();
-    Assert.assertEquals(109656, allLocationIds.size());
+    Assert.assertEquals(111407, allLocationIds.size());
   }
 
   @Test
@@ -37,7 +37,7 @@ public class LocationsTest {
     // e.g.:
     // BE,BRU,Brussel (Bruxelles),Brussel (Bruxelles),BRU,AI,1234----,1101,,5050N 00420E,
     // BE,BRU,Bruxelles (Brussel),Bruxelles (Brussel),BRU,AI,1234----,1101,,5050N 00420E,
-    Assert.assertEquals(109801, allLocations.size());
+    Assert.assertEquals(111553, allLocations.size());
   }
 
   @Test
