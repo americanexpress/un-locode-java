@@ -2,7 +2,19 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.americanexpress.un-locode</groupId>
   <artifactId>un-locode</artifactId>
+  <version>1.0.1</version>
+
+  <properties>
+    <java.version>8</java.version>
+    <maven-dependency-plugin.version>3.1.0</maven-dependency-plugin.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
   <build>
     <plugins>
       <plugin>
@@ -39,14 +51,40 @@
       <version>1.18.12</version>
     </dependency>
   </dependencies>
-  <groupId>com.americanexpress</groupId>
-  <modelVersion>4.0.0</modelVersion>
-  <properties>
-    <java.version>8</java.version>
-    <maven-dependency-plugin.version>3.1.0</maven-dependency-plugin.version>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-  </properties>
 
-  <version>1.0.0</version>
+
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>https://github.com/americanexpress/un-locode-java/blob/master/LICENSE.txt</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>Nicolas Correard</name>
+      <email>nicolas.correard@aexp.com</email>
+      <organization>American Express</organization>
+    </developer>
+  </developers>
+
+  <scm>
+    <url>https://github.com/americanexpress/un-locode-java</url>
+    <connection>scm:git:git://github.com/americanexpress/un-locode-java</connection>
+    <developerConnection>scm:git:ssh://git@github.com/americanexpress/un-locode-java.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+    <system>GitHub Issues</system>
+    <url>https://github.com/americanexpress/un-locode-java/issues</url>
+  </issueManagement>
+
+  <distributionManagement>
+    <repository>
+      <id>bintray-americanexpress-maven</id>
+      <name>americanexpress-maven</name>
+      <url>https://api.bintray.com/maven/americanexpress/maven/com.americanexpress.un-locode/;publish=1</url>
+    </repository>
+  </distributionManagement>
 </project>
