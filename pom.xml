@@ -84,7 +84,7 @@
     <repository>
       <id>bintray-americanexpress-maven</id>
       <name>americanexpress-maven</name>
-      <url>https://api.bintray.com/maven/americanexpress/maven/com.americanexpress.un-locode/;publish=1</url>
+      <url>https://api.bintray.com/maven/americanexpress/maven/com.americanexpress.unlocode/;publish=1</url>
     </repository>
   </distributionManagement>
 </project>
