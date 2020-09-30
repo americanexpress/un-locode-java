@@ -19,8 +19,9 @@ import lombok.Getter;
 @Getter
 public class Coordinates {
 
-  public static Coordinates UNKNOWN = new Coordinates();
-  public static Coordinates INVALID = new Coordinates();
+  public static final Coordinates UNKNOWN = new Coordinates();
+  public static final Coordinates INVALID = new Coordinates();
+
   private int latitudeDegrees;
   private int latitudeMinutes;
   private LatitudeDirection latitudeDirection;

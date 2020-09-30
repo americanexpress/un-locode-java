@@ -121,6 +121,9 @@ public class Locations {
    * Note there may be several entries corresponding to a single country and code; for example, in multi-lingual
    * countries: <pre>BE,BRU</pre> maps to "Brussel (Bruxelles)" and "Bruxelles (Brussel)".
    *
+   * @param country the ISO-3166 alpha-2 country code.
+   * @param code the location code
+   *
    * @return all the Locations matching the given country and code.
    */
   public static Collection<Location> getLocations(String country, String code) {
@@ -132,6 +135,8 @@ public class Locations {
    *
    * Note there may be several entries corresponding to a single country and code; for example, in multi-lingual
    * countries: <pre>BE,BRU</pre> maps to "Brussel (Bruxelles)" and "Bruxelles (Brussel)".
+   *
+   * @param locationId the id (made of country code and location code) for the location to retrieve
    *
    * @return all the Locations matching the given LocationId.
    */
@@ -190,7 +195,7 @@ public class Locations {
       Multimap<String, LocationId> map) {
     List<String> foundStrings = findInSortedListStartingWith(sortedList, start.toLowerCase(Locale.ENGLISH));
     List<Collection<LocationId>> list = foundStrings.stream()
-        .map(e -> map.get(e))
+        .map(map::get)
         .collect(Collectors.toList());
     return list.stream().flatMap(Collection::stream).collect(Collectors.toList());
   }
